@@ -151,8 +151,8 @@ namespace GitHubHelper.Libs {
             }
 
             var owner = uri.Segments[1].Trim('\\', '/');
-            var repo = uri.Segments[2];
-            var branch = uri.Segments[4];
+            var repo = uri.Segments[2].Trim('\\', '/');
+            var branch = uri.Segments[4].Trim('\\', '/');
             var relativePath = String.Join('/', uri.Segments.Skip(5).Select(x => x.Trim('\\', '/')));
 
             return String.Format(@"{0}://{1}/api/v3/repos/{2}/{3}/contents/{4}?ref={5}",
