@@ -25,12 +25,19 @@ namespace GitHubHelper.Libs {
     public class Manager : IManager {
         private readonly IWebRequestHelper _webRequestHelper;
         private readonly string _tokenAuth;
+        private readonly string _apiPrefixUrl;
 
-        public Manager(string tokenAuth)
-            : this(new WebRequestHelper(), tokenAuth) {
+        public static class API_PREFIX_URL {
+            public const string DEFAULT_GITHUB = @"api.{HOST}";
+
+            public const string ENTERPRISE_GITHUB_V3 = @"{HOST}/api/v3";
         }
 
-        public Manager(IWebRequestHelper webRequestHelper, string tokenAuth) {
+        public Manager(string tokenAuth, string apiPrefixUrl = API_PREFIX_URL.DEFAULT_GITHUB)
+            : this(new WebRequestHelper(), tokenAuth, apiPrefixUrl) {
+        }
+
+        public Manager(IWebRequestHelper webRequestHelper, string tokenAuth, string apiPrefixUrl = API_PREFIX_URL.DEFAULT_GITHUB) {
             if (webRequestHelper == null) {
                 throw new ArgumentNullException("webRequestHelper");
             }
@@ -38,9 +45,14 @@ namespace GitHubHelper.Libs {
             if (String.IsNullOrEmpty(tokenAuth)) {
                 throw new ArgumentNullException("tokenAuth");
             }
-            
+
+            if (String.IsNullOrEmpty(apiPrefixUrl)) {
+                throw new ArgumentNullException("apiPrefixUrl");
+            }
+
             _webRequestHelper = webRequestHelper;
             _tokenAuth = tokenAuth;
+            _apiPrefixUrl = apiPrefixUrl;
         }
 
         private JToken GetRepoContent(string repoContentUrl) {
@@ -134,7 +146,7 @@ namespace GitHubHelper.Libs {
             else if (jRepoContent is JArray) {
                 return ProcessDirectoryRepoContent((JArray)jRepoContent, targetDirectory);
             }
-            else {
+            else if (jRepoContent != null) {
                 Debug.Fail("Json Type of Repo Content is not implemented!");
             }
 
@@ -155,11 +167,13 @@ namespace GitHubHelper.Libs {
             var branch = uri.Segments[4].Trim('\\', '/');
             var relativePath = String.Join('/', uri.Segments.Skip(5).Select(x => x.Trim('\\', '/')));
 
-            return String.Format(@"{0}://{1}/api/v3/repos/{2}/{3}/contents/{4}?ref={5}",
-                uri.Scheme, uri.Host, owner, repo, relativePath, branch);
+            var apiPrefixUrl = _apiPrefixUrl.Replace("{HOST}", uri.Host);
+
+            return String.Format(@"{0}://{1}/repos/{2}/{3}/contents/{4}?ref={5}",
+                uri.Scheme, apiPrefixUrl, owner, repo, relativePath, branch);
         }
 
-        public int Download(string repoBlobOrTreeUrl, string targetDirectory) {
+        public virtual int Download(string repoBlobOrTreeUrl, string targetDirectory) {
             var repoContentUrl = GenerateRepoContentUrl(repoBlobOrTreeUrl);
             var jRepoContent = GetRepoContent(repoContentUrl);
             return ProcessRepoContent(jRepoContent, targetDirectory);
