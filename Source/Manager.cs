@@ -158,7 +158,8 @@ namespace GitHubHelper.Libs {
             var uri = new Uri(repoBlobOrTreeUrl);
 
             var urlType = uri.Segments[3];
-            if (String.IsNullOrEmpty(urlType) || urlType.Equals("blob") || urlType.Equals("tree")) {
+            if (String.IsNullOrEmpty(urlType) ||
+                !(urlType.Equals("blob", StringComparison.InvariantCultureIgnoreCase) || urlType.Equals("tree", StringComparison.InvariantCultureIgnoreCase))) {
                 throw new ArgumentException("Url is neither blob or tree.");
             }
 
