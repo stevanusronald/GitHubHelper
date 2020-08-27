@@ -1,0 +1,18 @@
+{
+    "name": "IManager.cs",
+    "path": "Source/IManager.cs",
+    "sha": "244179d4426a7fed30270e39bd21bc2b97842e02",
+    "size": 818,
+    "url": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/IManager.cs?ref=master",
+    "html_url": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/IManager.cs",
+    "git_url": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/244179d4426a7fed30270e39bd21bc2b97842e02",
+    "download_url": "https://raw.githubusercontent.com/stevanusronald/GitHubHelper/master/Source/IManager.cs",
+    "type": "file",
+    "content": "LyoKICogQ29weXJpZ2h0IDIwMjAgU3RldmFudXMgUm9uYWxkIFJpYW50b25v\nCiAqCiAqIExpY2Vuc2VkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVy\nc2lvbiAyLjAgKHRoZSAiTGljZW5zZSIpOwogKiB5b3UgbWF5IG5vdCB1c2Ug\ndGhpcyBmaWxlIGV4Y2VwdCBpbiBjb21wbGlhbmNlIHdpdGggdGhlIExpY2Vu\nc2UuCiAqIFlvdSBtYXkgb2J0YWluIGEgY29weSBvZiB0aGUgTGljZW5zZSBh\ndAogKgogKiAgICAgaHR0cDovL3d3dy5hcGFjaGUub3JnL2xpY2Vuc2VzL0xJ\nQ0VOU0UtMi4wCiAqCiAqIFVubGVzcyByZXF1aXJlZCBieSBhcHBsaWNhYmxl\nIGxhdyBvciBhZ3JlZWQgdG8gaW4gd3JpdGluZywgc29mdHdhcmUKICogZGlz\ndHJpYnV0ZWQgdW5kZXIgdGhlIExpY2Vuc2UgaXMgZGlzdHJpYnV0ZWQgb24g\nYW4gIkFTIElTIiBCQVNJUywKICogV0lUSE9VVCBXQVJSQU5USUVTIE9SIENP\nTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxp\nZWQuCiAqIFNlZSB0aGUgTGljZW5zZSBmb3IgdGhlIHNwZWNpZmljIGxhbmd1\nYWdlIGdvdmVybmluZyBwZXJtaXNzaW9ucyBhbmQKICogbGltaXRhdGlvbnMg\ndW5kZXIgdGhlIExpY2Vuc2UuCiAqLwogCiBuYW1lc3BhY2UgR2l0SHViSGVs\ncGVyLkxpYnMgewogICAgcHVibGljIGludGVyZmFjZSBJTWFuYWdlciB7CiAg\nICAgICAgc3RyaW5nIEdlbmVyYXRlUmVwb0NvbnRlbnRVcmwoc3RyaW5nIHJl\ncG9CbG9iT3JUcmVlVXJsKTsKCiAgICAgICAgaW50IERvd25sb2FkKHN0cmlu\nZyByZXBvQmxvYk9yVHJlZVVybCwgc3RyaW5nIHRhcmdldERpcmVjdG9yeSk7\nCiAgICB9Cn0=\n",
+    "encoding": "base64",
+    "_links": {
+        "self": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/IManager.cs?ref=master",
+        "git": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/244179d4426a7fed30270e39bd21bc2b97842e02",
+        "html": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/IManager.cs"
+    }
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "name": "GitHubHelper.Libs.csproj",
+        "path": "Source/GitHubHelper.Libs.csproj",
+        "sha": "02db6a4f94ee5e35c1a1d454a9de933d2b1f03e2",
+        "size": 246,
+        "url": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/GitHubHelper.Libs.csproj?ref=master",
+        "html_url": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/GitHubHelper.Libs.csproj",
+        "git_url": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/02db6a4f94ee5e35c1a1d454a9de933d2b1f03e2",
+        "download_url": "https://raw.githubusercontent.com/stevanusronald/GitHubHelper/master/Source/GitHubHelper.Libs.csproj",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/GitHubHelper.Libs.csproj?ref=master",
+            "git": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/02db6a4f94ee5e35c1a1d454a9de933d2b1f03e2",
+            "html": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/GitHubHelper.Libs.csproj"
+        }
+    },
+    {
+        "name": "IManager.cs",
+        "path": "Source/IManager.cs",
+        "sha": "244179d4426a7fed30270e39bd21bc2b97842e02",
+        "size": 818,
+        "url": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/IManager.cs?ref=master",
+        "html_url": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/IManager.cs",
+        "git_url": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/244179d4426a7fed30270e39bd21bc2b97842e02",
+        "download_url": "https://raw.githubusercontent.com/stevanusronald/GitHubHelper/master/Source/IManager.cs",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/IManager.cs?ref=master",
+            "git": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/244179d4426a7fed30270e39bd21bc2b97842e02",
+            "html": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/IManager.cs"
+        }
+    },
+    {
+        "name": "IWebRequestHelper.cs",
+        "path": "Source/IWebRequestHelper.cs",
+        "sha": "2689b513110fcc746c440ec953ffb83234b7630a",
+        "size": 1148,
+        "url": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/IWebRequestHelper.cs?ref=master",
+        "html_url": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/IWebRequestHelper.cs",
+        "git_url": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/2689b513110fcc746c440ec953ffb83234b7630a",
+        "download_url": "https://raw.githubusercontent.com/stevanusronald/GitHubHelper/master/Source/IWebRequestHelper.cs",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/IWebRequestHelper.cs?ref=master",
+            "git": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/2689b513110fcc746c440ec953ffb83234b7630a",
+            "html": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/IWebRequestHelper.cs"
+        }
+    },
+    {
+        "name": "Manager.cs",
+        "path": "Source/Manager.cs",
+        "sha": "9f0ea94064f982c2a489bc18af022e56fab98556",
+        "size": 7066,
+        "url": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/Manager.cs?ref=master",
+        "html_url": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/Manager.cs",
+        "git_url": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/9f0ea94064f982c2a489bc18af022e56fab98556",
+        "download_url": "https://raw.githubusercontent.com/stevanusronald/GitHubHelper/master/Source/Manager.cs",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/Manager.cs?ref=master",
+            "git": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/9f0ea94064f982c2a489bc18af022e56fab98556",
+            "html": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/Manager.cs"
+        }
+    },
+    {
+        "name": "WebRequestHelper.cs",
+        "path": "Source/WebRequestHelper.cs",
+        "sha": "4c27b73b4d7f3eb7a2981c73bdb4e05d17f936bb",
+        "size": 3742,
+        "url": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/WebRequestHelper.cs?ref=master",
+        "html_url": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/WebRequestHelper.cs",
+        "git_url": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/4c27b73b4d7f3eb7a2981c73bdb4e05d17f936bb",
+        "download_url": "https://raw.githubusercontent.com/stevanusronald/GitHubHelper/master/Source/WebRequestHelper.cs",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/stevanusronald/GitHubHelper/contents/Source/WebRequestHelper.cs?ref=master",
+            "git": "https://api.github.com/repos/stevanusronald/GitHubHelper/git/blobs/4c27b73b4d7f3eb7a2981c73bdb4e05d17f936bb",
+            "html": "https://github.com/stevanusronald/GitHubHelper/blob/master/Source/WebRequestHelper.cs"
+        }
+    }
+]

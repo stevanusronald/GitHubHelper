@@ -21,7 +21,7 @@ using Newtonsoft.Json;
 
 namespace GitHubHelper.Libs {
     public class WebRequestHelper : IWebRequestHelper {
-        public void DownloadFile(string url, string targetFilename, out HttpStatusCode statusCode, Action<WebRequest> onWebRequestCreated = null, int timeoutInSeconds = 300, int bufferSizeInBytes = 5120)
+        public virtual void DownloadFile(string url, string targetFilename, out HttpStatusCode statusCode, Action<WebRequest> onWebRequestCreated = null, int timeoutInSeconds = 300, int bufferSizeInBytes = 5120)
         {
             var request = WebRequest.Create(url);
             request.Timeout = (timeoutInSeconds * 1000);
@@ -53,7 +53,7 @@ namespace GitHubHelper.Libs {
             }
         }
 
-        public T GetData<T>(string url, out HttpStatusCode statusCode, byte[] requestData, Action<WebRequest> onWebRequestCreated = null, int timeoutInSeconds = 30, string methodType = "GET", string contentType = "application/json")
+        public virtual T GetData<T>(string url, out HttpStatusCode statusCode, byte[] requestData, Action<WebRequest> onWebRequestCreated = null, int timeoutInSeconds = 30, string methodType = "GET", string contentType = "application/json")
         {
             var request = WebRequest.Create(url);
             request.Timeout = (timeoutInSeconds * 1000);
